@@ -17,9 +17,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCurriculum }) => {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-800 text-emerald-100">
                 <Compass className="w-4 h-4 text-emerald-300" aria-hidden="true" />
               </span>
-              <span className="text-lg font-bold tracking-tight text-white">
+              <a
+                href="https://amazon-hike.com/intro"
+                className="text-lg font-bold tracking-tight text-white hover:text-emerald-300 transition-colors"
+              >
                 亞馬遜國家山岳協會
-              </span>
+              </a>
             </div>
             <p className="text-xs sm:text-sm text-stone-400 leading-relaxed max-w-md">
               致力於推廣客觀、嚴謹、不依賴單一工具的專業登山安全教育。透過系統性實務教材，協助山岳活動者建立扎實的現地觀察、風險預判與空間定位能力。
@@ -74,7 +77,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCurriculum }) => {
 
         {/* Bottom Copyright & Design System Alignment */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
-          <p>© {new Date().getFullYear()} 亞馬遜國家山岳協會. 保留所有教育教材權利.</p>
+          <p>© {new Date().getFullYear()} <a href="https://amazon-hike.com/intro" className="hover:text-stone-300 underline underline-offset-2 transition-colors">亞馬遜國家山岳協會</a>. 保留所有教育教材權利.</p>
           <div className="flex items-center gap-4">
             <span>專業登山教育系列</span>
             <span aria-hidden="true">·</span>
