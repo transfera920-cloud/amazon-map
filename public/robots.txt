@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://c49b16c7-amazon-map.transfera920.workers.dev/sitemap.xml
+Sitemap: https://chapter03.amazon-hike.com/sitemap.xml
