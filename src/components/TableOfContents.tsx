@@ -14,7 +14,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ activeId }) =>
     >
       <div className="flex items-center gap-2 mb-4 pb-3 border-b border-stone-100">
         <ListFilter className="w-5 h-5 text-emerald-800" aria-hidden="true" />
-        <h2 className="text-lg font-bold text-stone-900">第三章 本章目錄索引</h2>
+        <h2 className="text-lg font-bold text-stone-900">本章目錄索引</h2>
         <span className="text-xs text-stone-500 ml-auto">全章 9 個核心主題 ＋ 總結</span>
       </div>
 

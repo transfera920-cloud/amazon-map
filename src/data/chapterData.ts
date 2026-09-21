@@ -2,7 +2,7 @@ import { SectionItem, ChapterMeta, CurriculumChapter } from '../types';
 
 export const CHAPTER_META: ChapterMeta = {
   number: 'Chapter 03',
-  title: '第三章 地圖與導航',
+  title: '地圖與導航',
   englishTitle: 'Map & Navigation',
   subtitle: '學習閱讀地圖、理解地形，建立登山者基本定位能力。',
   coreQuote: '導航不是依賴工具，而是建立位置判斷能力。',

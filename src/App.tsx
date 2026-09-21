@@ -6,7 +6,6 @@ import { Section1To3 } from './components/sections/Section1To3';
 import { Section4To6 } from './components/sections/Section4To6';
 import { Section7To9 } from './components/sections/Section7To9';
 import { ChapterSummary } from './components/ChapterSummary';
-import { ChapterNavigation } from './components/ChapterNavigation';
 import { Footer } from './components/Footer';
 import { CurriculumModal } from './components/CurriculumModal';
 
@@ -74,9 +73,6 @@ export const App: React.FC = () => {
 
           {/* Chapter Summary (ID: summary) */}
           <ChapterSummary />
-
-          {/* Previous / Next Chapter and Reserved Future Chapters */}
-          <ChapterNavigation onOpenCurriculum={() => setIsCurriculumOpen(true)} />
         </div>
       </main>
 

@@ -4,52 +4,13 @@ import { CHAPTER_META } from '../data/chapterData';
 
 interface HeroProps {
   onStartReading: () => void;
-  onOpenCurriculum: () => void;
+  onOpenCurriculum?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onStartReading, onOpenCurriculum }) => {
+export const Hero: React.FC<HeroProps> = ({ onStartReading }) => {
   return (
-    <section id="hero" aria-labelledby="chapter-h1" className="relative bg-stone-100/60 pt-6 pb-12 sm:pb-16 border-b border-stone-200">
+    <section id="hero" aria-labelledby="chapter-h1" className="relative bg-stone-100/60 pt-8 sm:pt-12 pb-12 sm:pb-16 border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb */}
-        <nav aria-label="麵包屑導覽" className="mb-6">
-          <ol className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-stone-500 font-medium">
-            <li>
-              <a
-                href="#hero"
-                className="hover:text-stone-900 transition-colors"
-              >
-                首頁
-              </a>
-            </li>
-            <li aria-hidden="true" className="text-stone-300">/</li>
-            <li>
-              <button
-                type="button"
-                onClick={onOpenCurriculum}
-                className="hover:text-stone-900 transition-colors inline-flex items-center gap-1"
-              >
-                <span>登山教育教材</span>
-              </button>
-            </li>
-            <li aria-hidden="true" className="text-stone-300">/</li>
-            <li className="text-emerald-900 font-semibold" aria-current="page">
-              第三章 地圖與導航
-            </li>
-          </ol>
-        </nav>
-
-        {/* Top Chapter Metadata Pill */}
-        <div className="flex items-center gap-2 mb-3">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-wider text-emerald-950 bg-emerald-100 border border-emerald-300">
-            <Compass className="w-3.5 h-3.5 text-emerald-800" aria-hidden="true" />
-            {CHAPTER_META.number} · {CHAPTER_META.englishTitle}
-          </span>
-          <span className="text-xs text-stone-500 font-medium hidden sm:inline">
-            亞馬遜國家山岳協會 官方教材系列
-          </span>
-        </div>
-
         {/* H1 & Lead Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7">
