@@ -21,11 +21,6 @@ export const Footer: React.FC<FooterProps> = () => {
             亞馬遜國家山岳協會
           </a>
         </div>
-
-        {/* Centered Copyright */}
-        <p className="text-xs text-stone-400">
-          © {new Date().getFullYear()} <a href="https://amazon-hike.com/chapter01/" className="hover:text-stone-300 underline underline-offset-2 transition-colors">亞馬遜國家山岳協會</a>. 保留所有教育教材權利.
-        </p>
       </div>
     </footer>
   );
