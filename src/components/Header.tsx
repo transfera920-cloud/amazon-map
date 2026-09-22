@@ -38,9 +38,9 @@ export const Header: React.FC<HeaderProps> = () => {
           {/* Association Brand & Chapter Identity */}
           <div className="flex items-center gap-3">
             <a
-              href="https://amazon-hike.com/chapter01/"
+              href="https://amazon-hike.com/"
               className="flex items-center gap-2.5 text-stone-900 hover:text-emerald-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-emerald-700 rounded-sm"
-              aria-label="前往亞馬遜國家山岳協會介紹"
+              aria-label="前往亞馬遜國家山岳協會首頁"
             >
               <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-emerald-900 text-emerald-100 shadow-xs">
                 <Compass className="w-5 h-5 text-emerald-300" aria-hidden="true" />
