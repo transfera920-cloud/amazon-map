@@ -15,7 +15,7 @@ export const Footer: React.FC<FooterProps> = () => {
             <Compass className="w-4 h-4 text-emerald-300" aria-hidden="true" />
           </span>
           <a
-            href="https://amazon-hike.com/intro"
+            href="https://amazon-hike.com/chapter01/"
             className="text-lg font-bold tracking-tight text-white hover:text-emerald-300 transition-colors"
           >
             亞馬遜國家山岳協會
@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = () => {
 
         {/* Centered Copyright */}
         <p className="text-xs text-stone-400">
-          © {new Date().getFullYear()} <a href="https://amazon-hike.com/intro" className="hover:text-stone-300 underline underline-offset-2 transition-colors">亞馬遜國家山岳協會</a>. 保留所有教育教材權利.
+          © {new Date().getFullYear()} <a href="https://amazon-hike.com/chapter01/" className="hover:text-stone-300 underline underline-offset-2 transition-colors">亞馬遜國家山岳協會</a>. 保留所有教育教材權利.
         </p>
       </div>
     </footer>

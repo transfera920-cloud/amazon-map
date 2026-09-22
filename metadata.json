@@ -1,5 +1,5 @@
 {
-  "name": "亞馬遜國家山岳協會｜登山教育教材 第三章 地圖與導航",
+  "name": "登山地圖與導航｜亞馬遜國家山岳協會",
   "description": "學習登山地圖閱讀、等高線與地形判讀、方向定位、路線判讀與導航流程，建立不依賴單一電子工具的基本登山導航能力。",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
