@@ -37,7 +37,7 @@ export const ChapterSummary: React.FC = () => {
 
   return (
     <section id="summary" aria-labelledby="summary-heading" className="my-16 scroll-mt-24">
-      <div className="rounded-2xl border-2 border-emerald-900/40 bg-gradient-to-br from-emerald-950 to-stone-900 text-white p-6 sm:p-10 shadow-lg">
+      <div className="rounded-2xl border border-emerald-900/50 bg-gradient-to-br from-emerald-950/80 via-slate-900 to-slate-950 text-white p-6 sm:p-10 shadow-lg">
         <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
           <BookmarkCheck className="w-5 h-5" aria-hidden="true" />
           <span>Chapter 03 Takeaways · 亞馬遜國家山岳協會</span>
@@ -51,16 +51,16 @@ export const ChapterSummary: React.FC = () => {
           {points.map((p) => (
             <div
               key={p.num}
-              className="flex items-start gap-3.5 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+              className="flex items-start gap-3.5 p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:bg-slate-800/60 transition-colors"
             >
-              <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-800/80 text-emerald-200 font-mono font-bold text-sm">
+              <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-950 border border-emerald-800 text-emerald-300 font-mono font-bold text-sm">
                 {p.num}
               </span>
               <div>
                 <h3 className="text-base font-bold text-white leading-snug">
                   {p.title}
                 </h3>
-                <p className="mt-1.5 text-xs sm:text-sm text-stone-300 leading-relaxed">
+                <p className="mt-1.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
                   {p.detail}
                 </p>
               </div>
@@ -68,7 +68,7 @@ export const ChapterSummary: React.FC = () => {
           ))}
 
           {/* Core Mantra Highlight Card */}
-          <div className="flex flex-col justify-center p-5 rounded-xl bg-emerald-900/60 border border-emerald-500/40">
+          <div className="flex flex-col justify-center p-5 rounded-xl bg-emerald-950/70 border border-emerald-500/40">
             <span className="text-xs font-bold text-emerald-300 uppercase tracking-wider mb-1">
               本章最高準則
             </span>

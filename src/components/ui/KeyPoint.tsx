@@ -15,13 +15,13 @@ export const KeyPoint: React.FC<KeyPointProps> = ({
   return (
     <aside
       aria-label={title}
-      className="my-6 rounded-lg border border-emerald-800/30 bg-emerald-50/70 p-5 sm:p-6 text-emerald-950"
+      className="my-6 rounded-lg border border-emerald-700/80 bg-emerald-950/40 p-5 sm:p-6 text-slate-200"
     >
-      <div className="flex items-center gap-2.5 mb-2 font-semibold text-emerald-900 text-base">
-        {icon || <Compass className="w-5 h-5 text-emerald-700 shrink-0" aria-hidden="true" />}
+      <div className="flex items-center gap-2.5 mb-2 font-semibold text-emerald-300 text-base">
+        {icon || <Compass className="w-5 h-5 text-emerald-400 shrink-0" aria-hidden="true" />}
         <span>{title}</span>
       </div>
-      <div className="text-sm sm:text-base leading-relaxed text-emerald-950 font-normal">
+      <div className="text-sm sm:text-base leading-relaxed text-slate-200 font-normal">
         {children}
       </div>
     </aside>

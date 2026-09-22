@@ -21,10 +21,10 @@ export const Header: React.FC<HeaderProps> = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-stone-200 transition-shadow duration-200">
+    <header className="sticky top-0 z-40 w-full bg-[#0b1015]/95 backdrop-blur-md border-b border-slate-800 transition-shadow duration-200">
       {/* Scroll Progress Bar */}
       <div
-        className="h-1 bg-emerald-700 transition-all duration-150 ease-out"
+        className="h-1 bg-emerald-500 transition-all duration-150 ease-out"
         style={{ width: `${scrollProgress}%` }}
         role="progressbar"
         aria-valuenow={Math.round(scrollProgress)}
@@ -39,13 +39,13 @@ export const Header: React.FC<HeaderProps> = () => {
           <div className="flex items-center gap-3">
             <a
               href="https://amazon-hike.com/"
-              className="flex items-center gap-2.5 text-stone-900 hover:text-emerald-900 transition-colors focus:outline-hidden focus:ring-2 focus:ring-emerald-700 rounded-sm"
+              className="flex items-center gap-2.5 text-slate-100 hover:text-emerald-400 transition-colors focus:outline-hidden focus:ring-2 focus:ring-emerald-500 rounded-sm"
               aria-label="前往亞馬遜國家山岳協會首頁"
             >
-              <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-emerald-900 text-emerald-100 shadow-xs">
+              <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-emerald-950 border border-emerald-800/80 text-emerald-300 shadow-xs">
                 <Compass className="w-5 h-5 text-emerald-300" aria-hidden="true" />
               </span>
-              <span className="text-base sm:text-lg font-bold tracking-tight text-stone-900 leading-none">
+              <span className="text-base sm:text-lg font-bold tracking-tight text-slate-100 leading-none">
                 亞馬遜國家山岳協會
               </span>
             </a>

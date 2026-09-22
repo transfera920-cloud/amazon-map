@@ -46,7 +46,7 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-stone-50 font-sans text-stone-800 antialiased selection:bg-emerald-200 selection:text-emerald-950">
+    <div className="min-h-screen bg-[#0b1015] font-sans text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
       {/* Sticky Header with Navigation & Progress Bar */}
       <Header onOpenCurriculum={() => setIsCurriculumOpen(true)} />
 
