@@ -1,6 +1,7 @@
 import React from 'react';
 import { Target, ShieldCheck, Compass, ArrowRight, Layers } from 'lucide-react';
 import { CHAPTER_META } from '../data/chapterData';
+import heroImg from '../assets/images/ch3_hero_mountaineer_1788933358806.jpg';
 
 interface HeroProps {
   onStartReading: () => void;
@@ -61,19 +62,14 @@ export const Hero: React.FC<HeroProps> = ({ onStartReading }) => {
             </div>
           </div>
 
-          {/* Hero Image Card with fallback */}
+          {/* Hero Image Card */}
           <div className="lg:col-span-5">
             <div className="relative rounded-xl overflow-hidden border border-slate-800 bg-slate-900 shadow-md">
               <img
-                src="/assets/ch3-hero-DIiQP4lg.jpg"
+                src={heroImg}
                 alt="登山者在山脊上研讀紙本地圖與導航工具"
                 className="w-full h-64 sm:h-80 object-cover object-center"
                 loading="eager"
-                onError={(e) => {
-                  // If ch3-hero-DIiQP4lg fails for any reason, use local generated image
-                  const target = e.target as HTMLImageElement;
-                  target.src = '/src/assets/images/ch3_hero_mountaineer_1788933358806.jpg';
-                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none" />
               <div className="absolute bottom-3 left-3 right-3 text-white">
