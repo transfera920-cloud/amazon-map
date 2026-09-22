@@ -15,12 +15,6 @@ export const Hero: React.FC<HeroProps> = ({ onStartReading }) => {
         {/* H1 & Lead Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7">
-            {/* Chapter 03 Badge */}
-            <div className="mb-3.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/90 border border-emerald-800/80 text-emerald-300 text-xs font-semibold">
-              <Compass className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
-              <span>第三章</span>
-            </div>
-
             <h1
               id="chapter-h1"
               className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-100 leading-tight sm:leading-tight"
